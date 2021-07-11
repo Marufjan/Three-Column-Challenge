@@ -1,0 +1,121 @@
+:root {
+  --color-box1: hsl(31, 77%, 52%);
+  --color-box2: hsl(184, 100%, 22%);
+  --color-box3: hsl(179, 100%, 13%);
+  --color-p: hsla(0, 0%, 100%, 0.75);
+  --color-bg-h-btn: hsl(0, 0%, 95%);
+}
+
+body {
+  font-size: 15px;
+  background-color: var(--color-bg-h-btn);
+  font-family: "Lexen Deca", sans-serif;
+  line-height: 1.4;
+}
+
+h1 {
+  color: var(--color-bg-h-btn);
+  font-family: "Big Shoulders Display", cursive;
+}
+
+.btn {
+  text-decoration: none;
+  color: var(--color-bg-h-btn);
+  border: 1px solid var(--color-bg-h-btn);
+  padding: 5px 15px;
+  border-radius: 15px;
+  margin: 3rem 0 0 0;
+  font-size: 0.8rem;
+  background: var(--color-bg-h-btn);
+}
+
+.box-1 .btn {
+  color: var(--color-box1);
+}
+
+.box-1 .btn:hover {
+  color: var(--color-bg-h-btn);
+  background: var(--color-box1);
+}
+
+.box-2 .btn {
+  color: var(--color-box2);
+}
+
+.box-2 .btn:hover {
+  color: var(--color-bg-h-btn);
+  background: var(--color-box2);
+}
+
+.box-3 .btn {
+  color: var(--color-box3);
+}
+
+.box-3 .btn:hover {
+  color: var(--color-bg-h-btn);
+  background: var(--color-box3);
+}
+
+p {
+  color: var(--color-p);
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden;
+  padding-top: 6rem;
+}
+
+.columns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.column {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  align-self: stretch;
+}
+
+.box-1 {
+  background-color: var(--color-box1);
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.box-2 {
+  background-color: var(--color-box2);
+}
+
+.box-3 {
+  background: var(--color-box3);
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+  .columns {
+    display: flex;
+    flex-direction: column;
+    margin: 0 1rem;
+    padding-bottom: 4rem;
+  }
+
+  .box-1 {
+    border-radius: 0px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+  }
+
+  .box-3 {
+    border-radius: 0px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+}
